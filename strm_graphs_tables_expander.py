@@ -5,7 +5,7 @@ import streamlit as st
 import plotly.graph_objects as go
 
 # Change the current working directory
-os.chdir('C:/WORK/IPC-HQ/Evidence Comparison Analysis')
+os.chdir('C:/WORK/IPC-HQ/Evidence Comparison Analysis/AP_EVIDENCE_COMPARISON')
 
 # Reading the AP Evidence Comparison data for use
 cols = ['Upload', 'Total_number_of_evidence', 'country', 'analysis_time', 'analysis_type']
@@ -137,13 +137,13 @@ if selected_country:
     col1, col2 = st.columns(2)
 
     with col1:
-        with st.expander("Evidence Data Wide Format"):
+        with st.expander("Evidence Data Wide Format",expanded=True):
             st.dataframe(evidence_data_wide, width=600, height=400)
-        with st.expander("Evidence Data Percentage Format"):
+        with st.expander("Evidence Data Percentage Format",expanded=True):
             st.dataframe(evidence_data_percentage, width=600, height=400)
 
     with col2:
-        with st.expander("Evidence Number Chart"):
+        with st.expander("Evidence Number Chart",expanded=True):
             st.plotly_chart(evidence_number, width = 600, height = 400)
-        with st.expander("Evidence Percentage Chart"):
+        with st.expander("Evidence Percentage Chart",expanded=True):
             st.plotly_chart(evidence_percentage, width = 600, height = 400)
