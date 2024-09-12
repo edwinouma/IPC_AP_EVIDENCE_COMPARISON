@@ -5,7 +5,6 @@ import streamlit as st
 import plotly.graph_objects as go
 
 # Change the current working directory
-os.chdir('C:/WORK/IPC-HQ/Evidence Comparison Analysis/AP_EVIDENCE_COMPARISON')
 
 # Reading the AP Evidence Comparison data for use
 cols = ['Upload', 'Total_number_of_evidence', 'country', 'analysis_time', 'analysis_type']
