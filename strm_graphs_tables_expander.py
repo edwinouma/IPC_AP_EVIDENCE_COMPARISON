@@ -8,7 +8,7 @@ import plotly.graph_objects as go
 
 # Reading the AP Evidence Comparison data for use
 cols = ['Upload', 'Total_number_of_evidence', 'country', 'analysis_time', 'analysis_type']
-evidence_data = pd.read_excel('AP_evidence_comparison_08sep2024.xlsx', usecols=cols)
+evidence_data = pd.read_excel('AP_evidence_comparison_24oct2024.xlsx', usecols=cols)
 
 upload_method = evidence_data['Upload'].unique()
 country = evidence_data['country'].unique()
